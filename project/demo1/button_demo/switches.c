@@ -36,23 +36,25 @@ void switch_interrupt_handler()
   switch_state_changed = 1;
 
   if (sw1_down) {
-    // count to 3 binary
+    // play song
     play_song = 1;
     led_update();
     reset_state();
   }
 
   else if (sw2_down) {
-    // play zelda melody
+    // buuton and binary function
     // reset_state();
-    led_update();
     toggle();
+    led_update();
+    
 
   }
 
   else if (sw3_down) {
-    led_update();
+    //led_update();
     dim_on = 1;
+    dim();
   }
 
   else if (sw4_down) {
@@ -60,6 +62,7 @@ void switch_interrupt_handler()
     play_song = 0;
     reset_state();
     led_update();
+    dim_on = 0;
   }
 }
 

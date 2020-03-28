@@ -20,7 +20,7 @@ void __interrupt_vec(WDT_VECTOR) WDT() {
   static char make_noise = 0;
   static char time_until_change = 0;
 
-  if (play_song && note < 33) {
+  if (play_song && note < 34) {
 
     if (++count == time_until_change) {
       count = 0;

@@ -13,9 +13,9 @@
 #define G6 1244
 
 extern char play_song;
-extern int notes[33];
-extern int note_duration[33];
-extern int delay_time[33];
+extern int notes[34];
+extern int note_duration[34];
+extern int delay_time[34];
 
 void buzzer_init();
 void buzzer_set_period(short cycles);
