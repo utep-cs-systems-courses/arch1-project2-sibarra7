@@ -20,3 +20,5 @@ load: button.elf
 clean:
 	rm -f *.o *.elf
 
+super:
+	rm -f *.o~ *.s~ *.c~ *.h~
