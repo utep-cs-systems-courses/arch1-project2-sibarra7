@@ -4,7 +4,7 @@
 #include "led.h"
 
 
-void toggle() {
+/*void toggle() {
 
   static char state = 0;
 
@@ -34,7 +34,7 @@ void toggle() {
     state    = 0;
     break;
   }
-}
+  }*/
 
 void reset_state() {
   red_on = 0;

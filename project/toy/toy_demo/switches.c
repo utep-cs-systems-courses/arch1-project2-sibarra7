@@ -3,6 +3,7 @@
 #include "led.h"
 #include "buzzer.h"
 #include "state_machine.h"
+#include "state_assembly.h"
 
 //booleans
 char sw1_down, sw2_down, sw3_down, sw4_down, switch_state_changed;
